@@ -1,4 +1,4 @@
-# **2-Tier Voting App — AWS Deployment** 🚀
+# **3-Tier Voting App — AWS Deployment** 🚀
 
 A cloud-hosted **Voting Application** deployed on **AWS** using a **2-Tier Architecture**:
 
@@ -18,7 +18,7 @@ User → S3 Website (Frontend) → ALB → EC2 (Backend) → RDS (Postgres)
 
 ### Architecture Diagram 🖼
 
-![AWS 2-Tier Architecture](*I'll update it soon* )
+![AWS 3-Tier Architecture](*I'll update it soon* )
 
 ---
 
@@ -73,7 +73,7 @@ deactivate
 # 6️⃣ Clone app repo (replace with your repo URL)
 cd /home/ubuntu
 if [ ! -d "app" ]; then
-    git clone https://github.com/apexsaksham/2-tier-app-.git app
+    git clone https://github.com/apexsaksham/2-tier-app.git
 else
     cd app && git pull
 fi
