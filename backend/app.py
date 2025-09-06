@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, jsonify
 from flask_cors import CORS            # <-- allow S3 frontend (or other origins) to call API
 import sqlite3
 import os
@@ -20,10 +20,6 @@ app = Flask(__name__, template_folder=FRONTEND_DIR, static_folder=STATIC_DIR)
 
 # Allow cross-origin requests (used when frontend is hosted on S3)
 CORS(app)
-
-@app.route('/style.css')
-def serve_css():
-    return send_from_directory(FRONTEND_DIR, 'style.css')
 
 # === Database configuration ===
 # For local use default to a file inside backend/
